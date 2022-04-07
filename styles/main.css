@@ -1,0 +1,128 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+main,
+header,
+.game-border,
+.score-board,
+.player-score {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  height: 92vh;
+}
+
+.game-border {
+  background-color: darkslategray;
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+}
+
+.game-board {
+  display: grid;
+  grid-template-columns: 200px 200px;
+  grid-template-rows: 200px 200px;
+  position: relative;
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: darkslategray;
+  position: absolute;
+  top: 125px;
+  right: 125px;
+}
+
+button {
+  border: none;
+  transition: all 0.4s ease-in-out;
+}
+
+#btn_one {
+  border-top-left-radius: 50%;
+  background-color: lightblue;
+}
+
+#btn_one:hover {
+  background-color: blue;
+  cursor: pointer;
+}
+
+#btn_one:active {
+  background-color: darkblue;
+}
+
+#btn_two {
+  border-top-right-radius: 50%;
+  background-color: lightyellow;
+}
+
+#btn_two:hover {
+  background-color: yellowgreen;
+  cursor: pointer;
+}
+
+#btn_two:active {
+  background-color: yellow;
+}
+
+#btn_three {
+  border-bottom-left-radius: 50%;
+  background-color: lightcoral;
+}
+
+#btn_three:hover {
+  background-color: red;
+  cursor: pointer;
+}
+
+#btn_three:active {
+  background-color: darkred;
+}
+
+#btn_four {
+  border-bottom-right-radius: 50%;
+  background-color: lightgreen;
+}
+
+#btn_four:hover {
+  background-color: green;
+  cursor: pointer;
+}
+
+#btn_four:active {
+  background-color: darkgreen;
+}
+
+.score-board {
+  flex-direction: column;
+  padding: 30px;
+  margin-left: 20px;
+  background-color: darkslategray;
+  border-radius: 5px;
+  color: white;
+}
+
+.player-score {
+  flex-direction: column;
+}
+
+h3 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
